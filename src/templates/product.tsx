@@ -4,7 +4,7 @@ import { ChangeEvent, useState } from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { Breadcrumbs } from "../components/breadcrumbs"
-import { HeartIcon } from "@heroicons/react/outline"
+import HeartIcon from "@heroicons/react/24/solid/HeartIcon"
 import { formatPrice } from "../utils/format-price"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { useAddItem } from "../utils/hooks/use-add-item"
@@ -26,7 +26,7 @@ const ProductPage = ({ pageContext: { product } }) => {
     }
   }
   const addToCart = () => {
-    addItem({ variantId: selectedVariant.id, quantity: 1 });
+    addItem({ variantId: selectedVariant.id, quantity: 1 })
   }
   return (
     <Layout>
